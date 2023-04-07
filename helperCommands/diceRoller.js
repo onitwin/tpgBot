@@ -1,8 +1,8 @@
 module.exports={
-	rollDice:(entry=1)=>{
+	rollDice:(number=1,range=6)=>{
 		const resultsArray=[]
-	for(let i=0; i < entry; i++){
-		resultsArray.push(Math.ceil(Math.random() * 6));
+	for(let i=0; i < number; i++){
+		resultsArray.push(Math.floor(Math.random() * range) + 1);
 	}
 	return resultsArray;
 	}

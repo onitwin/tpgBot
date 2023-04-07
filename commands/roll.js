@@ -6,7 +6,7 @@ module.exports = {
 		.setName('roll')
 		.setDescription('Rolls a D6'),
 	async execute(interaction) {
-		const result=rollDice(1)
+		const result=rollDice(1,6)
 		await interaction.reply({content:`${interaction.user.username} rolled : ${result}`});
 	},
 };
